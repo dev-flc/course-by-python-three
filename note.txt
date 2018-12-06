@@ -1,0 +1,51 @@
+crear anviente virtual
+
+instalar pip
+pip install virtualenv
+
+NOTE: en caso de que pip no es te actualizado aplicamos el siguiente comando
+python -m pip install --upgrade pip
+
+
+57
+down vote
+accepted
+On Windows pip3 should be in the Scripts path of your Python installation:
+
+C:\path\to\python\Scripts\pip3
+Use:
+
+where python
+to find out your where the Python executable(s) is/are located. The result should look like this:
+
+C:\path\to\python\python.exe
+or:
+
+C:\path\to\python\python3.exe
+You can if check pip3 works with this absolute path:
+
+C:\path\to\python\Scripts\pip3
+if yes, add C:\path\to\python\Scripts to your environmental variable PATH
+
+
+Verificamos que virtualenv fue instalado con el siguiente comando
+
+which virtualenv
+
+
+
+para levantar nuestro anviente en windows es en la carpeta de Scripts
+
+ejecutamos el archivo activate.bat
+
+en linux
+source anviente/bin/activate
+
+mostramos todas las dependencias de nuestro proyecto
+
+ pip freeze 
+
+ instalamos las  dependencias de nuestro proyecto
+ pip install -r .\requirements.txt
+ 
+ 
