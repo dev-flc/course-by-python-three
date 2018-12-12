@@ -8,7 +8,7 @@ def crear_cliente(name):
         clients += name
         _add_comma()
     else:
-        print("el cliente ya existe")
+        print("El cliente ya existe")
 
 def list_clients():
     global clients

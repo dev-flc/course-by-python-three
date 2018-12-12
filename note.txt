@@ -25,14 +25,15 @@ C:\path\to\python\python3.exe
 You can if check pip3 works with this absolute path:
 
 C:\path\to\python\Scripts\pip3
-if yes, add C:\path\to\python\Scripts to your environmental variable PATH
+if yes, add C:\path\to\python\Scripts to your e nvironmental variable PATH
 
 
 Verificamos que virtualenv fue instalado con el siguiente comando
 
 which virtualenv
 
-
+creamos nuestro entorno virtual con el siguiente comando 
+pip virtualenv venv ó  virtualenv venv
 
 para levantar nuestro anviente en windows es en la carpeta de Scripts
 
