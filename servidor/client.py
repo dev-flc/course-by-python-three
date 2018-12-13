@@ -10,6 +10,7 @@ def crear_cliente(name):
     else:
         print("El cliente ya existe")
 
+
 def list_clients():
     global clients
     print( ">", clients )
@@ -18,6 +19,7 @@ def list_clients():
 def _add_comma():
     global clients
     clients += ","
+
 
 def _print_welcome():
     print("*"*50)
@@ -29,11 +31,9 @@ def _print_welcome():
 
 
 if __name__ == "__main__":
-    #list_clients()
-    #crear_cliente("fer")
-    #list_clients()
     _print_welcome()
     command = input()
+
 
     if command == "A":
         client_name = input('Cual es el nombre del cliente >  ')
@@ -42,4 +42,6 @@ if __name__ == "__main__":
     elif command == "B":
         pass
     else:
-        print("El comando es invalido")
+        message = "El comando es invalido"
+        print(message)
+        print (">",len(message))
