@@ -50,3 +50,7 @@ mostramos todas las dependencias de nuestro proyecto
  pip install -r .\requirements.txt
  
  
+
+ deterner virtualenv
+
+ deactivate

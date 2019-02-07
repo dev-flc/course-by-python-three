@@ -41,7 +41,7 @@ class User(Resource):
             "age"  : args["age"],
             "occupation" : args["occupation"]
         }
-        users.append(user)
+            .append(user)
         return user, 201
 
 
