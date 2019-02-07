@@ -1,8 +1,7 @@
 from flask import Flask 
 import jwt
 from flask_restful import Api, Resource, reqparse
-import json
-import requests
+
 app = Flask(__name__)
 api = Api(app)
 
@@ -25,7 +24,7 @@ class DecToken(Resource):
 
 class User( Resource ):
     
-    def post( self ):
+    def get( self, rol, idParticipante ):
         data = {
             "codigoIntermediario": "string",
             "cua": "string",
@@ -42,8 +41,8 @@ class User( Resource ):
             "aMaterno": "string",
             "curp": "string",
             "email": "string"
-        }
-        
+        }       
+
         return data, 202
 
 
@@ -53,7 +52,7 @@ if __name__ == '__main__':
     
     api.add_resource(DecToken,'/token-dec')
 
-    api.add_resource(User, "/user")
+    api.add_resource(User, "/user/<string:rol>/<string:idParticipante>")
     
     app.run(host='127.0.0.1', port=8081)
 
